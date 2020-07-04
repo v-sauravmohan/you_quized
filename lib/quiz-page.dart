@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
-import 'package:youquized/start_quiz.dart';
+import 'start_quiz.dart';
 import 'quiz_brain.dart';
 import 'score_keeper.dart';
 
