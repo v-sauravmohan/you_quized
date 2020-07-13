@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'quiz-page.dart';
 
-// ignore: must_be_immutable
 class StartQuizPage extends StatelessWidget {
-  QuizPage quizPage = QuizPage();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,10 +20,9 @@ class StartQuizPage extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  quizPage.resetQuizPage();
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => quizPage),
+                    MaterialPageRoute(builder: (context) => QuizPage()),
                   );
                 },
               ),
