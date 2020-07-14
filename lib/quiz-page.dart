@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
-import 'start_quiz.dart';
 import 'quiz_brain.dart';
 import 'score_keeper.dart';
 
 QuizBrain quizBrain = QuizBrain();
 
 class QuizPage extends StatefulWidget {
+  void resetQuizPage() {
+    quizBrain.resetQuizBrain();
+  }
+
   @override
   _QuizPageState createState() => _QuizPageState();
 }
@@ -57,10 +60,8 @@ class _QuizPageState extends State<QuizPage> {
               ),
             ),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => StartQuizPage()),
-              );
+              Navigator.pop(context);
+              Navigator.pop(context);
             },
           ),
         ]).show();
